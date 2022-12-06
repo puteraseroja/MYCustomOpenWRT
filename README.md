@@ -15,9 +15,9 @@ sudo ./update-golang.sh <br><br>
 git clone https://git.openwrt.org/openwrt/openwrt.git <br>
 cd openwrt <br>
 git checkout v22.03.2 <br>
-git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages <br>
+git clone *https://github.com/kenzok8/openwrt-packages.git* package/openwrt-packages <br>
 ./scripts/feeds update -a && ./scripts/feeds install -a <br>
-wget https://downloads.openwrt.org/releases/22.03.0-rc5/targets/ramips/mt7621/config.buildinfo -O .config <br>
+wget *https://downloads.openwrt.org/releases/22.03.2/targets/ramips/mt7621/config.buildinfo* -O .config <br>
 make defconfig && make menuconfig <br><br>
 
 #hotkeys: [ENTER]=SELECT [Y]=INCLUDE [M]=MODULERISE [N]=EXCLUDE [ESC][ESC]=exit (press double ESC) <br><br>
