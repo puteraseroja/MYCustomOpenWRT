@@ -5,7 +5,7 @@ HOW TO COMPILE
 <br>
 https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem
 # Prerequisites
-#open terminal <br>
+### open terminal ### <br>
 sudo apt update <br>
 sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils zlib1g-dev <br>
 git clone https://github.com/udhos/update-golang <br>
@@ -19,8 +19,8 @@ git clone *https://github.com/kenzok8/openwrt-packages.git* package/openwrt-pack
 ./scripts/feeds update -a && ./scripts/feeds install -a <br>
 wget *https://downloads.openwrt.org/releases/22.03.2/targets/ramips/mt7621/config.buildinfo* -O .config <br>
 make defconfig && make menuconfig <br>
-####*link used above are for example only*### <br><br>
-#hotkeys: <br>
+### link used above are for example only *### <br><br>
+### hotkeys:### <br>
 [ENTER]=SELECT <br>
 [Y]=INCLUDE <br>
 [M]=MODULERISE <br>
