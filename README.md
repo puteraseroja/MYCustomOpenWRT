@@ -11,7 +11,7 @@ sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-
 git clone https://github.com/udhos/update-golang <br>
 cd update-golang <br>
 sudo ./update-golang.sh <br><br>
-
+# Compile
 git clone https://git.openwrt.org/openwrt/openwrt.git <br>
 cd openwrt <br>
 git checkout v22.03.2 <br>
