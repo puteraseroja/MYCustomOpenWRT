@@ -20,7 +20,12 @@ git clone *https://github.com/kenzok8/openwrt-packages.git* package/openwrt-pack
 wget *https://downloads.openwrt.org/releases/22.03.2/targets/ramips/mt7621/config.buildinfo* -O .config <br>
 make defconfig && make menuconfig <br><br>
 
-#hotkeys: [ENTER]=SELECT [Y]=INCLUDE [M]=MODULERISE [N]=EXCLUDE [ESC][ESC]=exit (press double ESC) <br><br>
+#hotkeys: <br>
+[ENTER]=SELECT <br>
+[Y]=INCLUDE <br>
+[M]=MODULERISE <br>
+[N]=EXCLUDE <br>
+[ESC][ESC]=exit (press double ESC) <br><br>
 
 #FOR AARCH64 <br>
 #select Languages--> Go--> Configuration--> External bootstrap Go root directory <br>
