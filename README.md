@@ -59,11 +59,15 @@ make menuconfig
 
 ### save and then exit <br>
 
-```
-make package/feeds/packages/golang/host/compile V=s
+
+#### Additional command for AARCH64:
+`make package/feeds/packages/golang/host/compile V=s`
+
+
+``
 make -j5 download
 make -j1 V=s
-```
+``
 > completed
 
 #### Succesfull compiled file can be found on \*/openwrt/bin/targets/`ramips/mt7621`
