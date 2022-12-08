@@ -66,6 +66,7 @@ make menuconfig
 
 ``
 make -j5 download
+
 make -j1 V=s
 ``
 > completed
