@@ -8,26 +8,44 @@ https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem <br>
 > open terminal
 
 
-`````
+```
 sudo apt update
+```
+```
 sudo apt install build-essential gawk gcc-multilib flex git gettext libncurses5-dev libssl-dev python3-distutils zlib1g-dev
+```
+```
 git clone https://github.com/udhos/update-golang
+```
+```
 cd update-golang
+```
+```
 sudo ./update-golang.sh
-`````
+```
 
 ## Compile with Passwall
-`````````
+```
 git clone https://git.openwrt.org/openwrt/openwrt.git
+```
+```
 cd openwrt
+```
+```
 git checkout v22.03.2
+```
+```
 git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-./scripts/feeds update -a
-./scripts/feeds install -a
+```
+```
+./scripts/feeds update -a && ./scripts/feeds install -a
+```
+```
 wget https://downloads.openwrt.org/releases/22.03.2/targets/ramips/mt7621/config.buildinfo -O .config
-make defconfig
-make menuconfig
-`````````
+```
+```
+make defconfig && make menuconfig
+```
 **`### openwrt version and links used above are for example only ###`** <br><br>
 
 #### Menuconfig Hotkeys:
@@ -61,14 +79,17 @@ make menuconfig
 
 
 #### Additional command for AARCH64:
-`make package/feeds/packages/golang/host/compile V=s`
+```
+make package/feeds/packages/golang/host/compile V=s
+```
 
 #### Final
-
-`make -j5 download`
-<br>
-`make -j1 V=s`
-
+```
+make -j5 download
+```
+```
+make -j1 V=s
+```
 > completed
 
 #### Succesfull compiled file can be found on \*/openwrt/bin/targets/`ramips/mt7621`
