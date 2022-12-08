@@ -37,7 +37,7 @@ make menuconfig
 > [N]=EXCLUDE <br>
 > [ESC][ESC]=exit (press double ESC) <br>
 
-#### Additional config for AARCH64:
+#### Additional config for AARCH64 arch:
 > select Languages--> Go--> Configuration--> External bootstrap Go root directory <br>
 > set /usr/local/go <br>
 > [ESC][ESC]<br>
@@ -63,12 +63,12 @@ make menuconfig
 #### Additional command for AARCH64:
 `make package/feeds/packages/golang/host/compile V=s`
 
+#### Final
 
-``
-make -j5 download
+`make -j5 download`
+<br>
+`make -j1 V=s`
 
-make -j1 V=s
-``
 > completed
 
 #### Succesfull compiled file can be found on \*/openwrt/bin/targets/`ramips/mt7621`
