@@ -1,5 +1,5 @@
 # OpenWRT compiled by PuteraSeroja
-
+# NOT TESTED. USE AT YOUR OWN RISK
 
 ## HOW TO COMPILE
 https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem <br>
